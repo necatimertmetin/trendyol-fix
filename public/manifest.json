@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Trendyol Blur Remover",
+  "version": "1.0",
+  "description": "Trendyol'daki blurları kaldıran bir extension.",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["*://trendyol.com/*", "*://*.trendyol.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://trendyol.com/*", "*://*.trendyol.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "eyes-16.png",
+    "128": "eyes-128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "eyes-16.png",
+      "128": "eyes-128.png"
+    },
+    "default_title": "Trendyol Blur Remover"
+  }
+}
